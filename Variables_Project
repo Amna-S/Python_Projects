@@ -9,3 +9,69 @@ mixed_color = color1 + color2
 
 # Step 3: Display the result
 print(f"When you mix {color1} and {color2}, you get {mixed_color}!")
+
+# Temperature converter
+celsius = float(input("Enter temperature in Celsius: "))
+fahrenheit = (celsius * 9/5) + 32
+print(f"The temperature in Fahrenheit is {fahrenheit}°F")
+
+# Tip calculator
+bill_amount = float(input("Enter the bill amount: $"))
+tip_percentage = float(input("Enter the tip percentage: "))
+tip = bill_amount * (tip_percentage / 100)
+total_amount = bill_amount + tip
+print(f"Tip: ${tip:.2f}")
+print(f"Total amount to pay: ${total_amount:.2f}")
+
+# BMI calculator
+weight = float(input("Enter your weight (kg): "))
+height = float(input("Enter your height (m): "))
+bmi = weight / (height ** 2)
+print(f"Your BMI is {bmi:.2f}")
+if bmi < 18.5:
+    print("You are underweight.")
+elif 18.5 <= bmi < 24.9:
+    print("You have a normal weight.")
+elif 25 <= bmi < 29.9:
+    print("You are overweight.")
+else:
+    print("You are obese.")
+
+# Mad Libs game
+noun = input("Enter a noun: ")
+verb = input("Enter a verb: ")
+adjective = input("Enter an adjective: ")
+print(f"The {adjective} {noun} decided to {verb} through the forest.")
+
+# Age calculator
+birth_year = int(input("Enter your birth year: "))
+current_year = 2024  # Update this to the current year
+age = current_year - birth_year
+print(f"You are {age} years old.")
+
+# Area and Perimeter of a Rectangle
+length = float(input("Enter the length of the rectangle: "))
+width = float(input("Enter the width of the rectangle: "))
+area = length * width
+perimeter = 2 * (length + width)
+print(f"Area: {area}")
+print(f"Perimeter: {perimeter}")
+
+# Grade Average Calculator
+grade1 = float(input("Enter grade 1: "))
+grade2 = float(input("Enter grade 2: "))
+grade3 = float(input("Enter grade 3: "))
+grade4 = float(input("Enter grade 4: "))
+average = (grade1 + grade2 + grade3 + grade4) / 4
+print(f"The average grade is: {average:.2f}")
+
+# Distance Converter
+kilometers = float(input("Enter distance in kilometers: "))
+miles = kilometers * 0.621371
+print(f"{kilometers} kilometers is equal to {miles:.2f} miles.")
+
+# Time Converter
+total_minutes = int(input("Enter time in minutes: "))
+hours = total_minutes // 60
+minutes = total_minutes % 60
+print(f"{total_minutes} minutes is equal to {hours} hour(s) and {minutes} minute(s).")
