@@ -1,0 +1,11 @@
+# Favorite Color Mixer in Python
+
+# Step 1: Get the user's favorite colors
+color1 = input("Enter your first favorite color: ")
+color2 = input("Enter your second favorite color: ")
+
+# Step 2: Mix the colors together (just concatenate them for this simple example)
+mixed_color = color1 + color2
+
+# Step 3: Display the result
+print(f"When you mix {color1} and {color2}, you get {mixed_color}!")
